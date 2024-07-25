@@ -3,91 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architectural Information</title>
+    <title>HTML Assignment 3</title>
     <style>
-        /* Ensure the entire content has a width of 1100px */
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
-            max-width: 1100px;
-            margin: 0 auto;
+            margin: 20px;
+            width: 1100px;
         }
-
-        /* Styling for the image container */
-        .imageContainer {
+        
+        h1 {
             text-align: center;
-            margin: 20px 0;
         }
-
-        .imageContainer img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-        }
-
-        /* Styling for the table */
+        
         table {
-            width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            width: 100%;
+            border: 1px solid black;
+            margin-bottom: 20px;
         }
 
         th, td {
-            padding: 10px;
+            border: 1px solid black;
+            padding: 1px;
+            text-align: left;
+        }
+
+        .green {
+            background-color: green;
+            color: white;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .middle {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+        
+        .imageContainer {
             text-align: center;
-            border: 1px solid #ddd;
-        }
-
-        .first-col, .last-col {
-            width: 200px;
-        }
-
-        .middle-col {
-            width: 600px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
+    <h1>HTML Assignment #3</h1>
 
-    <div class="imageContainer">
-        <img src="https://via.placeholder.com/600x400" alt="Architectural Design">
-    </div>
-
-    <table>
+    <h2>Table 1</h2>
+    <table id="table-1" class="middle">
         <thead>
             <tr>
-                <th class="first-col">Image</th>
-                <th class="middle-col">Text Content</th>
-                <th class="last-col">Image</th>
+                <th>First Column</th>
+                <th>Middle Column</th>
+                <th>Last Column</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="first-col">
-                    <img src="https://via.placeholder.com/200x150" alt="Building Image 1">
-                </td>
-                <td class="middle-col">
-                    <p>This is an example of architectural design. It showcases the integration of modern design elements with traditional aesthetics.</p>
-                </td>
-                <td class="last-col">
-                    <img src="https://via.placeholder.com/200x150" alt="Building Image 2">
-                </td>
+                <td id="t11"><img src="https://via.placeholder.com/150" alt="Image 1" width="200"></td>
+                <td id="t12" class="center">Text Content 1</td>
+                <td id="t13"><img src="https://via.placeholder.com/150" alt="Image 2" width="200"></td>
             </tr>
             <tr>
-                <td class="first-col">
-                    <img src="https://via.placeholder.com/200x150" alt="Building Image 3">
-                </td>
-                <td class="middle-col">
-                    <p>The design emphasizes functionality and form, blending seamlessly with its surroundings while providing essential services and amenities.</p>
-                </td>
-                <td class="last-col">
-                    <img src="https://via.placeholder.com/200x150" alt="Building Image 4">
-                </td>
+                <td id="t21"><img src="https://via.placeholder.com/150" alt="Image 3" width="200"></td>
+                <td id="t22" class="center">Text Content 2</td>
+                <td id="t23"><img src="https://via.placeholder.com/150" alt="Image 4" width="200"></td>
+            </tr>
+            <tr>
+                <td id="t31"><img src="https://via.placeholder.com/150" alt="Image 5" width="200"></td>
+                <td id="t32" class="center">Text Content 3</td>
+                <td id="t33"><img src="https://via.placeholder.com/150" alt="Image 6" width="200"></td>
             </tr>
         </tbody>
     </table>
 
+    <h2>Table 2</h2>
+    <table id="table-2" class="middle">
+        <thead>
+            <tr>
+                <th id="t21" colspan="6">Header Cell Span</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+            <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+            <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+            <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+            <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+            <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Table 3</h2>
+    <table id="table-3" class="middle">
+        <thead class="green">
+            <tr><td colspan="3">Green Header</td></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="t-image" colspan="3"><img src="https://via.placeholder.com/300" alt="Image" width="300"></td>
+            </tr>
+            <tr><td>Data</td><td>Data</td><td>Data</td></tr>
+            <tr><td>Data</td><td>Data</td><td>Data</td></tr>
+        </tbody>
+        <tfoot class="blue">
+            <tr><td colspan="3">Blue Footer</td></tr>
+        </tfoot>
+    </table>
+
+    <h2>List of medias</h2>
+    <ol>
+        <li><img src="https://picsum.photos/id/123/200/300" alt="Random Image"></li>
+        <li>
+            <video controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio tag.
+            </audio>
+        </li>
+    </ol>
 </body>
 </html>
