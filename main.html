@@ -4,45 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architectural Information</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file for styling -->
     <style>
-        /* Inline styles for container width */
+        /* Ensure the entire content has a width of 1100px */
         body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
             max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
+        }
+
+        /* Styling for the image container */
+        .imageContainer {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Styling for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .first-col, .last-col {
+            width: 200px;
+        }
+
+        .middle-col {
+            width: 600px;
         }
     </style>
 </head>
 <body>
-    <h1>Architectural Information</h1>
 
-    <!-- Image container with a sample image -->
     <div class="imageContainer">
-        <img src="https://via.placeholder.com/200" alt="Sample Image">
+        <img src="https://via.placeholder.com/600x400" alt="Architectural Design">
     </div>
 
-    <!-- Table with architectural details -->
     <table>
         <thead>
             <tr>
-                <th style="width: 200px;">Image</th>
-                <th style="width: 600px;">Text Content</th>
-                <th style="width: 200px;">Image</th>
+                <th class="first-col">Image</th>
+                <th class="middle-col">Text Content</th>
+                <th class="last-col">Image</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="https://via.placeholder.com/200" alt="Image 1"></td>
-                <td>Text describing architectural feature or information.</td>
-                <td><img src="https://via.placeholder.com/200" alt="Image 2"></td>
+                <td class="first-col">
+                    <img src="https://via.placeholder.com/200x150" alt="Building Image 1">
+                </td>
+                <td class="middle-col">
+                    <p>This is an example of architectural design. It showcases the integration of modern design elements with traditional aesthetics.</p>
+                </td>
+                <td class="last-col">
+                    <img src="https://via.placeholder.com/200x150" alt="Building Image 2">
+                </td>
             </tr>
             <tr>
-                <td><img src="https://via.placeholder.com/200" alt="Image 3"></td>
-                <td>Text describing another architectural feature or information.</td>
-                <td><img src="https://via.placeholder.com/200" alt="Image 4"></td>
+                <td class="first-col">
+                    <img src="https://via.placeholder.com/200x150" alt="Building Image 3">
+                </td>
+                <td class="middle-col">
+                    <p>The design emphasizes functionality and form, blending seamlessly with its surroundings while providing essential services and amenities.</p>
+                </td>
+                <td class="last-col">
+                    <img src="https://via.placeholder.com/200x150" alt="Building Image 4">
+                </td>
             </tr>
         </tbody>
     </table>
+
 </body>
 </html>
