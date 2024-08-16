@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architectural Information</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
+        /* Inline CSS for demonstration purposes */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            max-width: 1100px;
-            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 1100px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .imageContainer {
             text-align: center;
-            margin: 20px 0;
+            margin-bottom: 20px;
         }
         .imageContainer img {
             max-width: 100%;
             height: auto;
-            border: 2px solid #ddd;
-            border-radius: 8px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
+            padding: 8px;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
         }
         td:first-child, td:last-child {
             width: 200px;
@@ -48,34 +56,23 @@
     </style>
 </head>
 <body>
-    <div class="imageContainer">
-        <img src="https://via.placeholder.com/800x400" alt="Architectural Design">
-    </div>
+    <div class="container">
+        <div class="imageContainer">
+            <img src="your-image.jpg" alt="Architectural Image">
+        </div>
 
-    <table>
-        <thead>
+        <table>
             <tr>
-                <th>First Column</th>
-                <th>Middle Column</th>
-                <th>Last Column</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="https://via.placeholder.com/200x100" alt="Image 1"></td>
-                <td>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </td>
-                <td><img src="https://via.placeholder.com/200x100" alt="Image 2"></td>
+                <td><img src="left-image1.jpg" alt="Left Image 1"></td>
+                <td>Text Content for the first row, middle column. This is a description or other relevant information.</td>
+                <td><img src="right-image1.jpg" alt="Right Image 1"></td>
             </tr>
             <tr>
-                <td><img src="https://via.placeholder.com/200x100" alt="Image 3"></td>
-                <td>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </td>
-                <td><img src="https://via.placeholder.com/200x100" alt="Image 4"></td>
+                <td><img src="left-image2.jpg" alt="Left Image 2"></td>
+                <td>Text Content for the second row, middle column. More description or details here.</td>
+                <td><img src="right-image2.jpg" alt="Right Image 2"></td>
             </tr>
-        </tbody>
-    </table>
+        </table>
+    </div>
 </body>
 </html>
